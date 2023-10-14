@@ -13,7 +13,7 @@ from sqlalchemy import create_engine, text
 
 # not working so had to change the password by creating a new one
 # db_connection_string= "mysql+pymysql://splk2f787s61havomk4o:pscale_pw_z794BUqR7aMq8QfiZO3yY7gAYoa70fkTIE6chdNY4cB@aws.connect.psdb.cloud/sujatacareers?charset=utf8mb4"
-db_connection_string= "mysql+pymysql://ujv5w8i5girfdxzm8sdc:pscale_pw_Y85nOhzhrI4HllJQFiIxDrvajFVp32EgbdCYWowvtXm@aws.connect.psdb.cloud/sujatacareers?charset=utf8mb4"
+db_connection_string= "mysql+pymysql://pohfkrc8wptuw7hamk4i:pscale_pw_SgpmAIkus0tc1XZERApkdbhdgeIJ4MXDEFT3D8C7EHl@aws.connect.psdb.cloud/sujatacareers?charset=utf8mb4"
 engine = create_engine(db_connection_string,
                     connect_args={"ssl":{"ssl ca": "/etc/ssl/cert.pem"}})
 
