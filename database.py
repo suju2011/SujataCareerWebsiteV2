@@ -11,8 +11,9 @@ from sqlalchemy import create_engine, text
 
 # Setting the creat engine in a string and called in engine to create it. and also putting another ssl to be created in the engine to run the code and avoide error "ssl"
 
-db_connection_string= "mysql+pymysql://splk2f787s61havomk4o:pscale_pw_z794BUqR7aMq8QfiZO3yY7gAYoa70fkTIE6chdNY4cB@aws.connect.psdb.cloud/sujatacareers?charset=utf8mb4"
-
+# not working so had to change the password by creating a new one
+# db_connection_string= "mysql+pymysql://splk2f787s61havomk4o:pscale_pw_z794BUqR7aMq8QfiZO3yY7gAYoa70fkTIE6chdNY4cB@aws.connect.psdb.cloud/sujatacareers?charset=utf8mb4"
+db_connection_string= "mysql+pymysql://ujv5w8i5girfdxzm8sdc:pscale_pw_Y85nOhzhrI4HllJQFiIxDrvajFVp32EgbdCYWowvtXm@aws.connect.psdb.cloud/sujatacareers?charset=utf8mb4"
 engine = create_engine(db_connection_string,
                     connect_args={"ssl":{"ssl ca": "/etc/ssl/cert.pem"}})
 
