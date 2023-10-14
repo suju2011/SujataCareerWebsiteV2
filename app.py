@@ -1,6 +1,9 @@
 from flask import Flask, render_template, jsonify
+from database import load_jobs_from_db
 
+# by importing the load_job functin from database file and removing the sqlalchemy from here and the engine also
 
+# from sqlalchemy import text
 app = Flask(__name__)
 
 JOBS=[
@@ -36,10 +39,24 @@ JOBS=[
   
   
 ]
+# Instead of having 2 database file and its details in different file we should call the function from database .py file to import just the function here by importing
+# def load_jobs_from_db():
+
+#   with engine.connect() as conn:
+
+#     result = conn.execute(text("select * from jobs"))
+#     # result_dicts=[]
+#     jobs=[]   # as this is a list of job so replaced the name by job and changed accordingly
+#     for row in result.all():
+#       # result_dicts.append(row._asdict())
+#       jobs.append(row._asdict())
+#     return jobs
 
 @app.route("/")
 def hello_sujata():
-  return render_template('home.html',jobs=JOBS,company_name='SujataCareers')
+  jobs=load_jobs_from_db()
+  return render_template('home.html',jobs=jobs,company_name='SujataCareers')
+  # return render_template('home.html',jobs=JOBS,company_name='SujataCareers')
 
 @app.route("/api/jobs")
 def list_jobs():
