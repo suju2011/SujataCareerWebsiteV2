@@ -6,39 +6,39 @@ from database import load_jobs_from_db
 # from sqlalchemy import text
 app = Flask(__name__)
 
-JOBS=[
-  {
-    'id':1,
-    'title':'Data Analyst',
-    'location':'Bangaluru, India',
-    'Salary':'Rs. 10,00,000'
+# JOBS=[
+#   {
+#     'id':1,
+#     'title':'Data Analyst',
+#     'location':'Bangaluru, India',
+#     'Salary':'Rs. 10,00,000'
   
-  },
-  {
-    'id':2,
-    'title':'Data Scientist',
-    'location':'Delhi, India',
-    'Salary':'Rs. 15,00,000'
+#   },
+#   {
+#     'id':2,
+#     'title':'Data Scientist',
+#     'location':'Delhi, India',
+#     'Salary':'Rs. 15,00,000'
   
-  },
+#   },
   
-  {
-    'id':3,
-    'title':'FrontEnd Engineer',
-    'location':'Remote'
-    # 'Salary':'Rs. 12,00,000'
+#   {
+#     'id':3,
+#     'title':'FrontEnd Engineer',
+#     'location':'Remote'
+#     # 'Salary':'Rs. 12,00,000'
   
-  },
-  {
-    'id':4,
-    'title':'BackEnd Engineer',
-    'location':'SanFrancisco, USA',
-    'Salary':'$ 120,00'
+#   },
+#   {
+#     'id':4,
+#     'title':'BackEnd Engineer',
+#     'location':'SanFrancisco, USA',
+#     'Salary':'$ 120,00'
   
-  }
+#   }
   
   
-]
+# ]
 # Instead of having 2 database file and its details in different file we should call the function from database .py file to import just the function here by importing
 # def load_jobs_from_db():
 
