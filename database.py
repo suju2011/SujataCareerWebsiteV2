@@ -4,7 +4,7 @@ from sqlalchemy import *
 from sqlalchemy import create_engine, text
 from sqlalchemy. util.langhelpers import dictlike_iteritems
 
-db_connection_string= "mysql+pymysql://ia7y7c9ekp5mp5zlxh4n:pscale_pw_ASO7wmpcHt1L0DaHw4FmAOGYaDRQ2akqsvd5zTD4N7f@aws.connect.psdb.cloud/sujatacareers?charset=utf8mb4"
+db_connection_string= "mysql+pymysql://ivv07werrg5vdh518pz1:pscale_pw_JDgOgy2J5aGZC3VvHu1olwjOp0gSedij0rN49rxYhxp@aws.connect.psdb.cloud/sujatacareers?charset=utf8mb4"
 engine = create_engine(db_connection_string,
                     connect_args={"ssl":{"ssl ca": "/etc/ssl/cert.pem"}})
 
