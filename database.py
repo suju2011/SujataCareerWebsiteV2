@@ -1,9 +1,9 @@
 
 
-# from sqlalchemy import *
-from sqlalchemy import create_engine, text
-# from sqlalchemy. util.langhelpers import dictlike_iteritems
 import os
+
+from sqlalchemy import *
+from sqlalchemy import create_engine, text
 
 db_connection_string = os.environ['DB_CONNECTION_STRING']
 # SETTING THE DATABASE DETAILS SECRATE TO US ONLY
