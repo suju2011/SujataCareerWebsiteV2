@@ -24,13 +24,17 @@
       {%endfor%}
     </ul>
     
-    </ul>
+   
   <!-- set in buleted form so, comented this
     <p>{{job.responsibilities}}</p> -->
   
   <h4>Requirements</h3>
-  <p>{{job.requirements}}</p>
-  
+<ol>
+    {%for line in job.requirements.split("\n")%}
+  <li>{{line}}</li>
+  {% endfor %}
+  <!-- <p>{{job.requirements}}</p> -->
+  </ol>
   <h3>Salary</h3>
   <p>{{job.currency}} {{job.salary}}</p>
 </div>
