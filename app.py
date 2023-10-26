@@ -75,7 +75,9 @@ def show_job(id):
     if job is None:
         return "Job not found", 404
     else:
-        return jsonify(job)
+       # to pass the dinamic database to use in  render-template we have to use instead of jsonify render tamplate to be used
+      # return jsonify(job)
+      return render_template('jobpage.html', job=job)
 
 if __name__ == '__main__':
   app.run(host='0.0.0.0', debug=True)
