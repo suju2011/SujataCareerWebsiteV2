@@ -1,0 +1,33 @@
+<h4>Application Form</h4>
+<form action="/job/{{job['id']}}/apply" method="post"> 
+  <!-- To use the post method we have to process the method in the route -->
+   <div class="mb-2"> 
+     <lable>Full Name : </lable>
+    <input type="text" name="full_name" placeholder= "Enter Your Name">
+   </div>
+
+ <div class="mb-2"> 
+   <lable>Email : </lable>
+  <input type="text" name="email" placeholder= "your valid  email address">
+ </div>
+
+ <div class="mb-2"> 
+   <lable>LinkedIn URL : </lable>
+  <input type="text" name="linkedin_url" placeholder= "Enter Your linkedin ID Site url">
+ </div>
+  <div class="mb-2">
+  <label>Education : </label>  
+    <textarea name="education"></textarea>
+  </div>
+  <div class="mb-2">
+  <label>Work Experience : </label>  
+    <textarea name="work_experience"></textarea>
+  </div>
+  <div class="mb-2">
+<label>Resume URL : </label>
+    <input type="text" name="resume_url">
+    
+    
+  </div>
+  <input type="submit" >
+</form>
